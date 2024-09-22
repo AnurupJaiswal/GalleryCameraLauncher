@@ -1,0 +1,102 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:strokeColor="@color/white"
+    app:cardCornerRadius="16dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlRelative3"
+        android:background="@color/white"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="45dp"
+            android:id="@+id/mcvIndicator"
+            android:layout_marginTop="5dp"
+            app:strokeColor="@color/white"
+            android:layout_marginStart="4dp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="#465D61"
+            android:layout_height="7dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlGallery"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/mcvIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivGallery"
+                android:layout_marginStart="15dp"
+                android:layout_width="30dp"
+                android:src="@drawable/gallery"
+                android:layout_marginTop="10dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/tvGallery"
+                android:layout_toEndOf="@id/ivGallery"
+                android:layout_width="match_parent"
+                android:text="@string/gallery"
+                android:textColor="#0D1B1D"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="7dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@id/ivGallery"
+                android:layout_below="@id/tvGallery"
+                android:textSize="12sp"
+                android:textColor="#465D61"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginStart="7dp"
+                android:text="@string/pick_photo_from_gallery"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlRelative5"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/rlGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivCamera"
+                android:layout_marginStart="15dp"
+                android:layout_width="30dp"
+                android:src="@drawable/camera"
+                android:layout_marginTop="10dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/tvCamera"
+                android:layout_toEndOf="@id/ivCamera"
+                android:layout_width="match_parent"
+                android:text="Camera"
+                android:textColor="#0D1B1D"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="7dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@id/ivCamera"
+                android:layout_below="@id/tvCamera"
+                android:textSize="12sp"
+                android:textColor="#465D61"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginStart="7dp"
+                android:text="@string/pick_photo_from_camera"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
